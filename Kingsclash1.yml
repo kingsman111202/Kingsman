@@ -1,14 +1,13 @@
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
-
 mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
 dns:
     enable: true
     ipv6: false
-    default-nameserver: [1.1.1.1, 8.8.8.8, 9.9.9.9, 45.90.28.0, 45.90.30.0, 208.67.222.222, 185.228.168.9, 76.76.19.19]
+    default-nameserver: [1.1.1.1, 8.8.8.8, 9.9.9.9, 45.90.28.0, 45.90.30.0]
     enhanced-mode: redir-host
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
@@ -7041,3 +7040,4 @@ rules:
     - 'IP-CIDR,224.0.0.0/4,DIRECT'
     - 'IP-CIDR6,fe80::/10,DIRECT'
     - 'MATCH,Kingsman'
+
